@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+h1{
+    padding: 10px 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+h1 span{
+    color:rgb(129, 38, 233);
+}
+.pic-box{
+    height:100px;
+    width:100px;
+    display:flex;
+    justify-items: center;
+    bg0cikir
+}
