@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing:border-box;
 }
-
+body{
+    background-color: #ebe8ff;
+}
 h1{
     padding: 10px 0px;
     margin: 0px auto;
@@ -12,12 +14,24 @@ h1{
 }
 
 h1 span{
-    color:rgb(129, 38, 233);
+    color:#6851ff;
+}
+
+.gallery-of-pictures{
+    width:1140px;
+    height:900px;
+    border:2px solid red;
+    margin:0px auto;
+    display: grid;
+    grid-template-columns:repeat(6, 190);
+    grid-template-rows: repeat(6, 150);
+
 }
 .pic-box{
-    height:100px;
-    width:100px;
+    height:300px;
+    width:300px;
+    overflow: hidden;
     display:flex;
     justify-items: center;
-    bg0cikir
+    border:2px solid black;
 }
