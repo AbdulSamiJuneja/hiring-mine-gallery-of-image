@@ -1,95 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #ebe8ff;
 }
-h1{
+
+h1 {
     padding: 10px 0px;
-    margin: 0px auto;
     text-align: center;
     font-size: 50px;
+    padding: 50px 0px; 
 }
 
-h1 span{
-    color:#6851ff;
+h1 span {
+    color: #6851ff;
 }
 
-.gallery-of-pictures{
-    width:1140px;
-    height:900px;
-    border:2px solid red;
-    margin:0px auto;
+.gallery-of-pictures {
+    width: 1140px;
+    height: 900px;
+    margin: 0px auto;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 0.8fr ;
-    grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    gap:15px;
-    padding:10px;
+    grid-template: repeat(14, 1fr) /repeat(12, 1fr);
+    gap: 15px;
+    padding: 10px;
     overflow: hidden;
-}
-.pic-box{
-    height:100%;
-    width:100%;
-    overflow: hidden;
-    display:flex;
-    justify-items: center;
-    border:2px solid black;
-    border-radius:5px;
 }
 
-.img-box1{
-    grid-area:3/1/5/3;
-    background: url("./Accests/hiringmine-img1.jpg") ;
+.pic-box {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.img-box1 {
+    grid-area: 4/1/7/5;
+    background: url("./Accests/hiringmine-img1.jpg");
     background-size: cover;
     background-position: center;
 }
-.img-box2{
-   grid-area:2/3/4/5;
-   background: url("./Accests/hiringmine-img2.jpg") ;
-   background-size: cover;
-   background-position: center;
-}
-.img-box3{
-    grid-area:1/5/4/7;
-    background: url("./Accests/hiringmine-img3.jpg") ;
+
+.img-box2 {
+    grid-area: 2/5/5/8;
+    background: url("./Accests/hiringmine-img2.jpg");
     background-size: cover;
     background-position: center;
 }
-.img-box4{
-    grid-area:5/1/7/3;
-    background: url("./Accests/hiringmine-img4.jpg") ;
+
+.img-box3 {
+    grid-area: 1/8/5/12;
+    background: url("./Accests/hiringmine-img3.jpg");
     background-size: cover;
     background-position: center;
 }
-.img-box5{
-    grid-area:4/3/7/6;
-    background: url("./Accests/hiringmine-img5.jpg") ;
+
+.img-box4 {
+    grid-area: 7/1/10/5;
+    background: url("./Accests/hiringmine-img4.jpg");
     background-size: cover;
     background-position: center;
 }
-.img-box6{
-      grid-area:4/6/5/8;
-      background: url("./Accests/hiringmine-img6.jpg") ;
-      background-size: cover;
-      background-position: center;
-}
-.img-box7{
-    grid-area:7/2/9/4;
-    background: url("./Accests/hiringmine-img7.jpg") ;
+
+.img-box5 {
+    grid-area: 5/5/10/10;
+    background: url("./Accests/hiringmine-img5.jpg");
     background-size: cover;
     background-position: center;
 }
-.img-box8{
-    grid-area:5/6/8/8;
-    background: url("./Accests/hiringmine-img8.jpg") ;
+
+.img-box6 {
+grid-area: 5/10/7/14;
+    background: url("./Accests/hiringmine-img6.jpg");
     background-size: cover;
     background-position: center;
 }
-.img-box9{
-    grid-area:7/4/9/6;
-    background: url("./Accests/hiringmine-img9.jpg") ;
+
+.img-box7 {
+    grid-area: 10/3/14/7;
+    background: url("./Accests/hiringmine-img7.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box8 {
+    grid-area: 7/10/12/14;
+    background: url("./Accests/hiringmine-img8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box9 {
+    grid-area: 10/7/14/10;
+    background: url("./Accests/hiringmine-img9.jpg");
     background-size: cover;
     background-position: center;
 }
