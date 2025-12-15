@@ -23,15 +23,73 @@ h1 span{
     border:2px solid red;
     margin:0px auto;
     display: grid;
-    grid-template-columns:repeat(6, 190);
-    grid-template-rows: repeat(6, 150);
-
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 0.8fr ;
+    grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap:15px;
+    padding:10px;
+    overflow: hidden;
 }
 .pic-box{
-    height:300px;
-    width:300px;
+    height:100%;
+    width:100%;
     overflow: hidden;
     display:flex;
     justify-items: center;
     border:2px solid black;
+    border-radius:5px;
+}
+
+.img-box1{
+    grid-area:3/1/5/3;
+    background: url("./Accests/hiringmine-img1.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.img-box2{
+   grid-area:2/3/4/5;
+   background: url("./Accests/hiringmine-img2.jpg") ;
+   background-size: cover;
+   background-position: center;
+}
+.img-box3{
+    grid-area:1/5/4/7;
+    background: url("./Accests/hiringmine-img3.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.img-box4{
+    grid-area:5/1/7/3;
+    background: url("./Accests/hiringmine-img4.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.img-box5{
+    grid-area:4/3/7/6;
+    background: url("./Accests/hiringmine-img5.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.img-box6{
+      grid-area:4/6/5/8;
+      background: url("./Accests/hiringmine-img6.jpg") ;
+      background-size: cover;
+      background-position: center;
+}
+.img-box7{
+    grid-area:7/2/9/4;
+    background: url("./Accests/hiringmine-img7.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.img-box8{
+    grid-area:5/6/8/8;
+    background: url("./Accests/hiringmine-img8.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+.img-box9{
+    grid-area:7/4/9/6;
+    background: url("./Accests/hiringmine-img9.jpg") ;
+    background-size: cover;
+    background-position: center;
 }
