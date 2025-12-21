@@ -12,7 +12,7 @@ h1 {
     padding: 10px 0px;
     text-align: center;
     font-size: 50px;
-    padding: 50px 0px; 
+    padding: 50px 0px;
 }
 
 h1 span {
@@ -37,7 +37,14 @@ h1 span {
     display: flex;
     justify-items: center;
     border-radius: 10px;
+    transition: all 1s;
+    transform: scale(1);
 }
+
+.pic-box:hover {
+    transform: scale(1.1);
+}
+
 
 .img-box1 {
     grid-area: 4/1/7/5;
@@ -75,7 +82,7 @@ h1 span {
 }
 
 .img-box6 {
-grid-area: 5/10/7/14;
+    grid-area: 5/10/7/14;
     background: url("./Accests/hiringmine-img6.jpg");
     background-size: cover;
     background-position: center;
@@ -101,24 +108,27 @@ grid-area: 5/10/7/14;
     background-size: cover;
     background-position: center;
 }
-footer{
+
+footer {
     position: fixed;
-    bottom:0px;
-    width:100%;
-    color:white;
+    bottom: 0px;
+    width: 100%;
+    color: white;
     height: 50px;
     background-color: #6851ff;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap: 30px;
 }
-footer a{
-    color:white;
-    font-size:20px;
-    text-decoration:none;
+
+footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     font-size: 21px;
     text-decoration: underline;
 }
