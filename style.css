@@ -19,15 +19,22 @@ h1 span {
     color: #6851ff;
 }
 
+.main-contianer {
+    width: 100%;
+    height:100%;
+}
+
 .gallery-of-pictures {
-    width: 1140px;
-    height: 900px;
+    /* max-width: 1200px; */
+    height:900px;
+    width: 95%;
     margin: 0px auto;
     display: grid;
     grid-template: repeat(14, 1fr) /repeat(12, 1fr);
     gap: 15px;
     padding: 10px;
     overflow: hidden;
+    margin-bottom:150px;
 }
 
 .pic-box {
@@ -82,7 +89,7 @@ h1 span {
 }
 
 .img-box6 {
-    grid-area: 5/10/7/14;
+    grid-area: 5/10/7/12;
     background: url("./Accests/hiringmine-img6.jpg");
     background-size: cover;
     background-position: center;
@@ -96,7 +103,7 @@ h1 span {
 }
 
 .img-box8 {
-    grid-area: 7/10/12/14;
+    grid-area: 7/10/12/12;
     background: url("./Accests/hiringmine-img8.jpg");
     background-size: cover;
     background-position: center;
@@ -131,4 +138,95 @@ footer a {
 footer a:hover {
     font-size: 21px;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+    /* .gallery-of-pictures{
+        grid-template: repeat(7, 200px) / repeat(2, 1fr) ;
+    } */
+
+    .gallery-of-pictures {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 200px);
+        height: auto;
+    }
+
+    .gallery-of-pictures>div {
+        grid-area: auto;
+    }
+
+    .img-box1 {
+        grid-area: 1/1/2/2 !important;
+    }
+
+    .img-box2 {
+        grid-area: 1/2/2/3 !important;
+    }
+
+    .img-box3 {
+        grid-area: 2/1/3/3 !important;
+    }
+
+    .img-box4 {
+        grid-area: 3/1/4/2 !important;
+    }
+
+    .img-box5 {
+        grid-area: 3/2/5/3 !important;
+    }
+
+    .img-box6 {
+        grid-area: 4/1/5/2 !important;
+    }
+
+    .img-box8 {
+        grid-area: 5/1/6/3 !important;
+    }
+
+    .img-box7 {
+        grid-area: 6/1/7/2;
+    }
+
+    .img-box9 {
+        grid-area: 7/2/8/3;
+    }
+
+
+    footer {
+        height: 30px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer a:hover {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-of-pictures{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 300px);
+        height: auto;
+    }
+
+    .gallery-of-pictures > div{
+        grid-area:auto !important;
+    }
+
+       footer {
+        height: 20px;
+        font-size: 10px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+    footer a:hover {
+        font-size: 14px;
+    }
 }
